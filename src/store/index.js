@@ -47,7 +47,7 @@ export default new Vuex.Store({
             return new Promise((resolve, reject) => {
                 commit("auth_request");
                 axios({
-                        url: "http://localhost:3232/login",
+                        url: "http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//login",
                         data: user,
                         method: "POST"
                     })
@@ -82,7 +82,7 @@ export default new Vuex.Store({
             return new Promise((resolve, reject) => {
                 commit("auth_request");
                 axios({
-                        url: "http://localhost:3232/register",
+                        url: "http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//register",
                         data: user,
                         method: "POST"
                     })

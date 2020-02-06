@@ -74,7 +74,7 @@ export default {
     this.getMost();
     this.isCutOff();
     console.log("repeated 1");
-    // axios.get("http://localhost:3232/stamp").then(resp=>{
+    // axios.get("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//stamp").then(resp=>{
     //   console.log("stamp:", resp)
     // }).catch(err=>{
     //   console.log("stamp err:", err);
@@ -91,7 +91,7 @@ export default {
           firstDay: firstDayi.toLocaleString().split(",")[0],
           lastDay: lastDayi.toLocaleString().split(",")[0]
         };
-        axios.post("http://localhost:3232/cutoff", dates).then(resp => {
+        axios.post("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//cutoff", dates).then(resp => {
           console.log("cutoff: ", resp);
         });
       }
@@ -101,7 +101,7 @@ export default {
     },
     getMost() {
       axios
-        .get("http://localhost:3232/mostRequest")
+        .get("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//mostRequest")
         .then(resp => {
           this.mostly = resp.data.dbres.reverse();
         })

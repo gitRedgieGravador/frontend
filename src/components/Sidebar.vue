@@ -117,7 +117,7 @@
 </template>
 <script>
 // import io from "socket.io-client";
-// var socket = io.connect("http://localhost:3232");
+// var socket = io.connect("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/");
 // import axios from 'axios'
 /* eslint-disable */
 export default {
@@ -135,7 +135,7 @@ export default {
     //   this.dontshow = true
     // }
     // this.onNewRequest();
-    // axios.get("http://localhost:3232/unread").then(resp=>{
+    // axios.get("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//unread").then(resp=>{
     //   this.vrnum = resp.data.count
     // })
   },

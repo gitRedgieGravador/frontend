@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3232';
+const BASE_URL = 'http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/';
 
 export function addRequest(data) {
     return axios.post(`${BASE_URL}/addRequest`, { data })

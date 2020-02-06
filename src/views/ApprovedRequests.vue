@@ -23,7 +23,7 @@
 import RequestTable from "../modules/tibs/RequestTableNoButtons.vue";
 import { getApproved } from "../actions/requestAxios.js";
 // import io from "socket.io-client";
-// var socket = io.connect("http://localhost:3232");
+// var socket = io.connect("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/");
 export default {
   components: {
     RequestTable

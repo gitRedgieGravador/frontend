@@ -62,7 +62,7 @@ export default {
     },
     getMost() {
       axios
-        .get("http://localhost:3232/mostly-group")
+        .get("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//mostly-group")
         .then(resp => {
           resp.data.forEach(element => {
             var basicData = {

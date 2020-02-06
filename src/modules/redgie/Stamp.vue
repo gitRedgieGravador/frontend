@@ -74,7 +74,7 @@ export default {
   },
   beforeMount() {
     axios
-      .get("http://localhost:3232/stamp")
+      .get("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//stamp")
       .then(resp => {
         var templist = _.groupBy(resp.data.stamp, "category");
         const entries = Object.entries(templist);

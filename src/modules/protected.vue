@@ -14,7 +14,7 @@
 </template>
 <script>
 import io from "socket.io-client";
-var socket = io.connect("http://localhost:3232");
+var socket = io.connect("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/");
 export default {
   name: "protected",
   data() {
