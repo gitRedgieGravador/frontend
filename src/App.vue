@@ -5,7 +5,7 @@
       <div v-show="resized">
         <v-app-bar-nav-icon v-if="isLoggedIn && !isStudent" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       </div>
-      <h1 @click="redirect('/')" v-show="!resized">PN Request Management System v1</h1>
+      <h1 @click="redirect('/')" v-show="!resized">PN Request Management System</h1>
       <h1 @click="redirect('/')" v-show="resized">PNRMS</h1>
       <v-spacer></v-spacer>
       <span v-if="isLoggedIn">
