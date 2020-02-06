@@ -266,7 +266,7 @@ export default {
     getUser() {
       let usernamei = this.$route.params.username || localStorage.getItem("username")
       axios
-        .post(`http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//getuser`, { username: usernamei })
+        .post(`http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/getuser`, { username: usernamei })
         .then(resp => {
           let user = resp.data.user;
           this.user = user;
@@ -278,7 +278,7 @@ export default {
     },
     getData(username) {
       axios
-        .get(`http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//request/${username}`)
+        .get(`http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/request/${username}`)
         .then(res => {
           this.list = res.data.dbresponse;
         })
@@ -304,7 +304,7 @@ export default {
         username: this.user.username,
         isGroup: isGroupVal
       };
-      let url = "http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//addRequest";
+      let url = "http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/addRequest";
       axios
         .post(url, body)
         .then(resp => {

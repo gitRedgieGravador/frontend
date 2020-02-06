@@ -145,7 +145,7 @@ export default {
         newpassword: this.newpassword,
         confirmpassword: this.confirmpassword
       };
-      let url = "http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//changepass/" + this.batchId;
+      let url = "http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/changepass/" + this.batchId;
       axios.put(url, new_data).then(resp => {
         console.log("dbres status: ", resp.data.status);
         if (resp.data.status) {

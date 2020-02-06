@@ -135,7 +135,7 @@ export default {
     //   this.dontshow = true
     // }
     // this.onNewRequest();
-    // axios.get("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//unread").then(resp=>{
+    // axios.get("http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/unread").then(resp=>{
     //   this.vrnum = resp.data.count
     // })
   },

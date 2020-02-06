@@ -173,7 +173,7 @@ export default {
       var firstDayi = new Date(date.getFullYear(), date.getMonth(), 1);// "12/1/2019"//
       var lastDayi = new Date(date.getFullYear(), date.getMonth() + 1, 0);// "12/30/2019"//
       if (lastDayi.toLocaleString().split(",")[0] == date.toLocaleString().split(",")[0]) {
-        axios.post('http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232//cutoff', {firstDay:firstDayi, lastDay: lastDayi}).then(resp=>{
+        axios.post('http://backendpnrms-env.dn4iumcmuw.us-east-1.elasticbeanstalk.com:3232/cutoff', {firstDay:firstDayi, lastDay: lastDayi}).then(resp=>{
           console.log("Saved on cut off")
         }).catch(err=>{
           console.log("Error on saving cut off")
