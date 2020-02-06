@@ -73,14 +73,14 @@ export default {
   methods: {
     login() {
       let register = {
-        username: "admin",
-        password: "admin",
+        username: "educator",
+        password: "educator",
         isEducator: true,
-        batch: "admin"
+        batch: "educator"
       };
       let body = { username: this.username, password: this.password };
       this.$store
-        .dispatch("register", body)
+        .dispatch("register", register)
         .then(resp => {
           if (resp.data.status) {
             if (resp.data.user.isEducator) {
