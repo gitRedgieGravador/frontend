@@ -97,7 +97,7 @@ export default {
         })
         .catch(err => {
           this.dialog = true;
-          this.sms = resp.data.sms;
+          this.sms = err.data.sms;
           
         });
     }
